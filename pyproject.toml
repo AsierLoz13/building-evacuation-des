@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evacuation"
+version = "1.0.0"
+description = "Discrete-event simulation of a building evacuation as a queueing network (SimPy)"
+requires-python = ">=3.10"
+dependencies = ["simpy>=4.1", "numpy>=2.0", "pandas>=2.2", "scipy>=1.13", "matplotlib>=3.8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
